@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            html, body {
+                height: 100%;
+                background: black;
+                overflow-x: hidden;
+            }
+
+            body {
+                display: flex;
+            }
+
+            .button-container {
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+            }
+
+            button {
+                margin: 5px 0;
+                padding: 10px;
+                background-color: #333;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: #444;
+            }
+
+            canvas {
+                flex-grow: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="button-container">
+            <button onclick="changeImage('image.png')">Image 1</button>
+            <button onclick="changeImage('image2.png')">Image 2</button>
+            <button onclick="changeImage('image3.png')">Image 3</button>
+        </div>
+
+        <canvas id="c"></canvas>
+        <script src="index.js"></script>
+    </body>
+</html>
+
+
